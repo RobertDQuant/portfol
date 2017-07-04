@@ -10,6 +10,8 @@
 
 form>* {
     outline: none;
+    text-align: center;
+    margin: auto 0;
 }
 
 a {
@@ -41,7 +43,8 @@ li {
 /* --- Typography --- */
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
     background-color: #eee;
     color: #666;
     margin-top: 60px;
@@ -96,6 +99,7 @@ p {
     /* full width */
     background-color: white;
     height: 60px;
+    box-shadow: 1px 1px 6px 1px #333;
 }
 
 .nav-bar .container {
@@ -311,4 +315,252 @@ p {
     .main-nav li>ul li span {
         background-color: #eee;
     }
+}
+
+
+/* Typography */
+
+html {
+    font-size: 16px;
+}
+
+.main-heading {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+}
+
+.subtext {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    margin: auto;
+    height: 0px;
+    color: #fff;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+}
+
+.container>h1 {
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text-shadow {
+    text-shadow: 1px 2px 4px #282828;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sec-about a {
+    text-decoration: underline;
+}
+
+.sec-contact .btn {
+    text-transform: uppercase;
+}
+
+.soc-media-ul a {
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/*=Base=*/
+
+section {
+    padding: 5em 0;
+}
+
+footer {
+    padding: 3em 0;
+}
+
+@media screen and (max-width: 768px) and (min-width: 485px) {
+    form {
+        max-width: 70%;
+    }
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+hr {
+    margin: 3em;
+}
+
+img {
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 6px 1px #282828;
+}
+
+
+/* Background Colors */
+
+.sec-about {
+    background: #59ABE3;
+}
+
+.sec-folio {
+    background: #336E7B;
+}
+
+.sec-contact {
+    background: #1BA39C;
+}
+
+.sec-about,
+.sec-folio,
+.sec-contact {
+    color: #fff;
+}
+
+
+/*Header*/
+
+.navbar {
+    box-shadow: 1px 1px 6px 1px #333;
+}
+
+.navbar-default {
+    background: #fff;
+}
+
+.navbar .fa-external-link {
+    vertical-align: top;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-brand:hover {
+    color: #4B77BE;
+}
+
+.navbar-default .navbar-nav>li>a:active {
+    color: #406bb0;
+}
+
+
+/*Main*/
+
+.sec-main {
+    height: 100vh;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/7/7e/St_Mary_Lake.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.sec-main:after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.main-heading {
+    padding: 0;
+    margin: 70px auto;
+    height: 40px;
+    color: #fff;
+}
+
+
+/*= Portfolio Layout=*/
+
+.sec-folio .row {
+    margin-bottom: 3em;
+    margin-bottom: 3em;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+    justify-content: center;
+}
+
+.sec-folio img {
+    max-width: 100%;
+}
+
+
+/*About*/
+
+.sec-about a {
+    color: #000;
+}
+
+.sec-about a:hover,
+.sec-about a:focus {
+    color: #4B77BE;
+}
+
+
+/* Contact */
+
+.sec-contact .form-control:focus {
+    border-color: #E9D460;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #E9D460;
+}
+
+.sec-contact .btn {
+    padding: .5rem 1.5rem;
+    background: #000;
+    font-size: .95rem;
+    color: #fff;
+}
+
+.sec-contact .btn:hover,
+.sec-contact .btn:focus {
+    background: #4B77BE;
+    border-color: #395f9d;
+}
+
+
+/*Footer*/
+
+footer {
+    background: #000;
+}
+
+.soc-media-ul {
+    display: flex;
+    justify-content: center;
+}
+
+.soc-media-ul li:not(:first-child) a {
+    margin-left: 1em;
+}
+
+.soc-media-ul a {
+    display: block;
+    padding: 0.5em .65rem;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+.soc-media-ul a:hover,
+.soc-media-ul a:focus {
+    color: #4B77BE;
 }

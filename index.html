@@ -5,6 +5,11 @@
     <meta charset="utf-8">
     <title>Robert Q</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Oswald|PT+Serif' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <script src="https://use.fontawesome.com/eee611e5a8.js"></script>
+
 
 </head>
 
@@ -22,20 +27,131 @@
             <h1 class="site-logo">ROBERT QUANT</h1>
 
             <ul class="main-nav small-caps">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><span>List of Work</span>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#folio">Projects</a></li>
+
+                <li><span>Connect</span>
                     <ul>
-                        <li><a href="#">Codepen</a></li>
-                        <li><a href="">Behance</a></li>
-                        <li><a href="#">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/robert-quant-04a97095/" target="_blank">linkedin</a></li>
+                        <li><a href="https://github.com/RobertDQuant" target="_blank">Github</a></li>
+                        <li><a href="https://resume.creddle.io/resume/86l2ed1kivn">Resume</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
         </div>
     </nav>
+    <header>
+        <section id="home" class="sec-main">
+            <h1 class="main-heading text-shadow">Robert Quant</h1>
+            <span class="subtext">Front-End Developer</span>
+        </section>
+
+        <section id="about" class="sec-about">
+            <div class="container">
+                <h1>About me</h1>
+
+                <hr />
+
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <p>Hi, my name is Robert Quant and I am a Front-End Web Developer &amp; Designer based in New York, New York. I enjoy crafting beautiful web pages in HTML5 and CSS3. My other skills include Photoshop, Illustrator, Computer Hardware.
+                            If you want to hire me or just to talk, connect with me.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="folio" class="sec-folio">
+            <div class="container">
+                <h1>Projects</h1>
+
+                <hr />
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="https://kenchung1996.github.io/p1-personal-profile-page/" target="_blank"><img class="center-block" src="https://static.pexels.com/photos/9574/pexels-photo.jpeg" alt="From Pexels.com" /></a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="https://kenchung1996.github.io/p2-responsive-layout/" target="_blank"><img class="center-block" src="https://static.pexels.com/photos/4164/landscape-mountains-nature-mountain.jpeg" alt="From the Pexels.com website" /></a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="https://kenchung1996.github.io/p3-online-registration-form/" target="_blank"><img class="center-block" src="https://upload.wikimedia.org/wikipedia/commons/7/76/HD_85512_Planetary_system.jpg" alt="From Pexels.com" /></a>
+                    </div>
+                </div>
+
+
+        </section>
+
+        <section id="contact" class="sec-contact">
+            <div class="container">
+                <h1>Contact me</h1>
+
+                <hr />
+
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <form class="center-block" action="#" method="post">
+                            <div class="form-group">
+                                <label class="sr-only" for="inputName">Full name:</label>
+
+                                <input id="inputName" class="form-control" type="text" placeholder="Elon Musk" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputMail" class="sr-only">Email Address:</label>
+
+                                <input id="inputMail" class="form-control" type="email" placeholder="helloworld@example.com" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="sr-only">Subject:</label>
+
+                                <input id="subject" class="form-control" type="text" placeholder="Job Application" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputMessage" class="sr-only">Your Message:</label>
+
+                                <textarea id="inputMessage" class="form-control" name="message" cols="30" rows="8" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button class="btn btn-default center-block" type="submit" value="Hire me">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="container">
+                <ul class="soc-media-ul">
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/robert-quant-04a97095/" class="fa fa-linkedin" target="_blank"></a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/RobertDQuant" class="fa fa-github" target="_blank"></a>
+                    </li>
+
+                    <li>
+                        <a href="robertdquant@gmail.com" class="fa fa-envelope"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        </div>
+    </header>
+
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
